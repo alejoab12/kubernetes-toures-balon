@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: toures-mongo-servicio
+spec:
+  selector:
+    app: toures-mongodb
+  ports:
+  - protocol: TCP
+    port: 27017
+    targetPort: 27017
