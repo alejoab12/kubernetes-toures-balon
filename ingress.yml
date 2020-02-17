@@ -8,7 +8,11 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /reserva
         backend:
           serviceName: toures-reserva-service
           servicePort: 9080
+      - path: /mongodb
+        backend:
+          serviceName: toures-mongo-servicio
+          servicePort: 27017
