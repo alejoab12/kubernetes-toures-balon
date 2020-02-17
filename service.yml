@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: toures-reserva-service
+spec:
+  selector:
+    app: toures-reserva-servicio
+  ports:
+  - protocol: TCP
+    port: 9080
+    targetPort: 9080

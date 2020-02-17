@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: toures-reserva-servicio-deployment
+spec:
+  selector:
+    matchLabels:
+      app: toures-reserva-servicio
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: toures-reserva-servicio
+    spec:
+      containers:
+      - name: toures-reserva-servicio
+        image: alejoab12/reserva
+        ports:
+        - containerPort: 9080
