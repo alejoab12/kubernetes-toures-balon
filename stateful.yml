@@ -25,6 +25,7 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: mysql-volumen
+      mountPath: /var/lib/mysql
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
