@@ -20,12 +20,9 @@ spec:
           name: mysql_port
         volumeMounts:
         - name: mysql_volumen
-          mountPath: ...
   volumeClaimTemplates:
   - metadata:
       name: mysql_volumen
-      annotations:
-        ...
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
