@@ -10,19 +10,19 @@ spec:
   template:
     metadata:
       labels:
-        app: 
+        app: toures-usuario-mysql
     spec:
       containers:
       - name: mysql
         image: mysql
         ports:
         - containerPort: 3306
-          name: mysql_port
+          name: mysql-port
         volumeMounts:
-        - name: mysql_volumen
+        - name: mysql-volumen
   volumeClaimTemplates:
   - metadata:
-      name: mysql_volumen
+      name: mysql-volumen
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
