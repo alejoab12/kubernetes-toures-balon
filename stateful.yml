@@ -12,7 +12,7 @@ spec:
       labels:
         app: 
     spec:
-       containers:
+      containers:
       - name: mysql
         image: mysql
         ports:
