@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app= toures-usuario-mysql
+        app: toures-usuario-mysql
     spec:
       containers:
       - name: mysql
