@@ -18,8 +18,6 @@ spec:
         ports:
         - containerPort: 3306
           name: mysql-port
-        volumeMounts:
-        - name: mysql-volumen
   volumeClaimTemplates:
   - metadata:
       name: mysql-volumen
